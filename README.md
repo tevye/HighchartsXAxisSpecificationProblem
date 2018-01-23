@@ -11,6 +11,7 @@ The working version is a slightly modified version of the example Emerson entere
 the only changes in the broken version is a set of arbitrary deletes from the 'points' array to force the timestamps to be sufficiently irregular to break the date inference provided by Highcharts. (If you delete just a few lines from the working copy's 'points' 2D-array, it still works). In the screen grab 'broken_badTickArray.html.png', you can see the dates are Dec 31, 1969 to Jan 1, 1970 and the tick array data is indecipherable.
 
 ### The attempted fix (version uploaded only 'representative' of several tries)
+Starting with the broken version, several attempts were made to overcome the erroneous date range problem.
 The screen grab 'works_goodTickArray.html.png' shows that Highcharts boiled down the large number of timestamps to a small set of midnight day boundaries. In the attempted fix version, the following code generators an explicit set of timestamps that are then given as the value for the x-axis data.
 
 	var xtd = [];
