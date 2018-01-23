@@ -36,3 +36,9 @@ The screen grab 'works_goodTickArray.html.png' shows that Highcharts boiled down
     max: may162017,
   
   which didn't help. Nor did removng the floor and ceiling definitions and going only with min/max.
+  
+  Adding the following also failed:
+      tickPositioner: function() {
+        return xtd;
+      },
+
