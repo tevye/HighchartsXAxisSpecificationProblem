@@ -1,6 +1,9 @@
 # HighchartsXAxisSpecificationProblem
 Three example Highstocks HTML files, one works, one is broken by making the data timestamps irregular, and the last shows a failed attempt to fix
 
+### Fix in fourth file
+See corrected.html
+
 ### Background
 The working version is a slightly modified version of the example Emerson entered for help with a javascript console error 15 (https://stackoverflow.com/questions/46164090/sorting-scatter-highstock-chart-with-multiple-series). Ignoring the console error, we want to the Highstocks navigator on a scatter plot with *irregular* data timestamps. The working version included here has a large 2D-array 'points' with regular time intervals. The xaxis declaration has a 'data' definition mapping values from 'points'.
 
